@@ -1,0 +1,582 @@
+body {
+    background: #F3F5FC;
+}
+
+.base {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.logointerno {
+    position: static;
+    width: 120px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 40px 0px;
+}
+
+.vector {
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
+
+#texto {
+    outline: none;
+    border: none;
+    resize: none;
+    position: absolute;
+    background-color: #F3F5FC;
+    width: 577px;
+    height: 480px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+#texto::placeholder {
+    color: #0A3871;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#textoResultado {
+    display: none;
+    position: static;
+    outline: none;
+    border: none;
+    resize: none;
+    width: 336px;
+    height: 781px;
+    left: 1032px;
+    top: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    margin: 30px;
+    background-color: #FFFFFF;
+}
+
+#munieco {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+#cajaDeMensajes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 32px;
+    top: 619px;
+}
+
+.textoMensaje {
+    position: static;
+    left: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.textoSuperior {
+    width: 336px;
+    height: 58px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    order: 0;
+}
+
+.textoInferior {
+    width: 336px;
+    height: 48px;
+    top: 74px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    order: 1;
+}
+
+.boton {
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 24px;
+}
+
+#botonCopiar {
+    display: none;
+    padding: 24px;
+    width: 336px;
+    height: 67px;
+    left: 1032px;
+    top: 885px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#botonCopiar:hover {
+    background-color: #e5e6eb;
+}
+
+.btn3 {
+    width: 288px;
+    height: 19px;
+    left: 24px;
+    top: 24px;
+    color: #0A3871;
+}
+
+.contenedorRedesInterno {
+    display: none;
+}
+
+.cajaInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+.cajaIcono {
+    position: static;
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    top: 1px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.vectorInfo {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.textoInfo {
+    position: static;
+    width: 205px;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.cajaBotones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+#botonEncriptar {
+    display: flex;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#botonEncriptar:hover {
+    background-color: #072B61;
+}
+
+#botonDesencriptar {
+    display: flex;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    background: #D8DFE8;
+    box-sizing: border-box;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+#botonDesencriptar:hover {
+    background-color: #CED4DA;
+}
+
+.btn {
+    position: static;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.btn1 {
+    height: 19px;
+    left: 24px;
+    top: 24px;
+    color: #FFFFFF;
+}
+
+.btn2 {
+    width: 280px;
+    height: 19px;
+    left: 24px;
+    top: 24px;
+    color: #0A3871;
+}
+
+.contenedor-redes {
+    position: relative;
+    width: 1440px;
+    background-color: #F3F5FC;
+    margin: auto;
+}
+
+.textoFooter {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    color: #0A3871;
+}
+
+.redes {
+    display: flex;
+    width: 220px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.redes a img {
+    margin: auto;
+    width: 30px;
+}
+
+@media all and (min-width: 376px) and (max-width: 768px) {
+    main {
+        width: 768px;
+        height: 1174px;
+    }
+    .base {
+        width: 768px;
+        height: 1174px;
+    }
+    .logo {
+        position: absolute;
+        width: 31px;
+        height: 48px;
+        left: 40px;
+        top: 76px;
+        background: #E9ECF8;
+    }
+    .vector {
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 6.25%;
+        bottom: 89.8%;
+    }
+    #texto {
+        width: 688px;
+        left: 40px;
+        top: 240px;
+    }
+    .rectangle1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 688px;
+        height: auto;
+        left: 40px;
+        top: 1001px;
+    }
+    #textoResultado {
+        position: static;
+        outline: none;
+        border: none;
+        resize: none;
+        position: static;
+        width: 624px;
+        height: 180px;
+        left: 32px;
+        top: 32px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 32px;
+    }
+    #botonCopiar {
+        margin: 0px auto 30px;
+    }
+    .contenedorRedesInterno {
+        display: flex;
+        margin: auto;
+        height: 67px;
+    }
+    #munieco {
+        display: none;
+    }
+    #cajaDeMensajes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        position: static;
+        width: 624px;
+        height: 69px;
+        left: 32px;
+        top: 32px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        padding: 32px;
+    }
+    .textoSuperior {
+        width: 624px;
+        height: 29px;
+        margin: 0px;
+    }
+    .textoInferior {
+        width: 624px;
+        height: 24px;
+    }
+    .cajaInfo {
+        left: 40px;
+        top: 836px;
+    }
+    .cajaBotones {
+        left: 40px;
+        top: 870px;
+    }
+    .contenedor-redes {
+        display: none;
+    }
+}
+
+@media all and (max-width: 375px) {
+    main {
+        width: 375px;
+        height: 933px;
+    }
+    .base {
+        width: 375px;
+        height: 933px;
+    }
+    .logo {
+        position: absolute;
+        width: 375px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+    .logointerno {
+        left: 4.27%;
+        right: 87.2%;
+        top: 25%;
+        bottom: 25%;
+    }
+    .vector {
+        left: 4.27%;
+        right: 87.2%;
+        top: 25%;
+        bottom: 25%;
+    }
+    #texto {
+        width: 343px;
+        height: 48px;
+        left: 16px;
+        top: 152px;
+    }
+    .rectangle1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 327px;
+        height: auto;
+        left: 24px;
+        top: 707px;
+    }
+    #textoResultado {
+        width: 279px;
+        height: 432px;
+        left: 32px;
+        top: 32px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 30px auto;
+    }
+    #botonCopiar {
+        position: static;
+        width: 279px;
+        height: 67px;
+        left: 32px;
+        top: 496px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 0px auto 20px auto;
+    }
+    .btn3 {
+        width: 231px;
+        margin: 0px 8px;
+    }
+    .contenedorRedesInterno {
+        display: flex;
+        width: 336px;
+        height: 67px;
+        order: 1;
+    }
+    #munieco {
+        display: none;
+    }
+    #cajaDeMensajes {
+        position: static;
+        width: 263px;
+        height: 122px;
+        left: 32px;
+        top: 32px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 32px
+    }
+    .textoSuperior {
+        width: 263px;
+        margin: 0px;
+    }
+    .textoInferior {
+        width: 263px;
+    }
+    .cajaInfo {
+        left: 16px;
+        top: 451px;
+    }
+    .cajaIcono {
+        position: static;
+        width: 16px;
+        height: 16px;
+        left: 0px;
+        top: 1px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+    .cajaBotones {
+        display: block;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+    }
+    #botonEncripar {
+        width: 343px;
+        align-self: stretch;
+        margin: 0px 0px 24px 0px;
+    }
+    #botonDesencriptar {
+        background: none;
+        left: 0px;
+        top: 91px;
+        align-self: stretch;
+        margin: 24px 0px 0px 0px;
+    }
+    .contenedor-redes {
+        display: none;
+    }
+}

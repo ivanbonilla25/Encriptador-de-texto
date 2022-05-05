@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="recursos/logo2.svg" />
+</head>
+
+<body>
+    <main>
+        <div class="base">
+            <div class="logo">
+                <div class="logointerno"><img class="vector" src="recursos/Logo.svg" alt="Logo"></div>
+            </div>
+            <textarea name="texto" autofocus id="texto" cols="50" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="rectangle1">
+                <div id="cajaDeMensajes">
+                    <p class="textoMensaje textoSuperior">Ningún mensaje fue encontrado</p>
+                    <p class="textoMensaje textoInferior">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <textarea name="textoResultado" id="textoResultado" cols="30" rows="10"></textarea>
+                <button class="boton" id="botonCopiar"><p class="btn btn3">Copiar</p></button>
+                <div class="contenedorRedesInterno">
+                    <div class="redes">
+                        <a href="https://www.instagram.com/ivanbonilla25/" target="_blank"><img src="recursos/instagram.svg" alt="instagram"></a>
+                        <a href="https://github.com/ivanbonilla25" target="_blank"><img src="recursos/github.svg" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/ivan-bonilla" target="_blank"><img src="recursos/linkedin.svg" alt="linkedin"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="munieco"><img src="recursos/Muñeco.svg" alt=""></div>
+            <div class="cajaInfo">
+                <div class="cajaIcono">
+                    <img class="vectorInfo" src="recursos/info.svg" alt="">
+                </div>
+                <p class="textoInfo">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="cajaBotones">
+                <button class="boton" id="botonEncriptar"><p class="btn btn1">Encriptar</p></button>
+                <button class="boton" id="botonDesencriptar"><p class="btn btn2">Desencriptar</p></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor-redes">
+            <div class="redes">
+                <a href="https://www.instagram.com/ivanbonilla25/" target="_blank"><img src="recursos/instagram.svg" alt="instagram"></a>
+                <a href="https://github.com/ivanbonilla25" target="_blank"><img src="recursos/github.svg" alt="github"></a>
+                <a href="https://www.linkedin.com/in/ivan-bonilla" target="_blank"><img src="recursos/linkedin.svg" alt="linkedin"></a>
+            </div>
+            <p class="textoFooter">Desarrollado por <strong>Iván Bonilla</strong> - Oracle y Alura latam </p>
+        </div>
+    </footer>
+    <script src="js/encriptador.js"></script>
+</body>
+
+</html>
